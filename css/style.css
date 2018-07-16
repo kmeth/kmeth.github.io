@@ -1,0 +1,467 @@
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+html {
+    font-family: 'Assistant', sans-serif;
+/*    background-color: rgba(3, 30, 53);*/
+    background-image: url(../images/background_repeat.jpg);
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+
+/* -- -- - - - - -  MY CSS - - - - - - - -- */
+
+nav{
+    background-color: rgba(0, 0, 0, 0.7);
+   
+    padding: 0 10%;
+    margin: auto;
+}
+header li,
+footer li{
+    list-style: none;
+    text-transform: uppercase;
+}
+
+a:link,
+a:visited{
+    text-decoration: none;
+    color: whitesmoke;
+       font-size: 95%;
+   
+}
+
+
+
+a:hover{
+    font-weight: bolder;
+    color: darkorange;
+   
+    
+}
+
+
+
+
+.menu-right ul{
+    float: right;
+}
+.menu-right ul li{
+    float: left;
+    padding-right: 25px; 
+
+}
+
+/* - - - - RESPONSIVE NAVBAR  - - - - - */
+
+.toggle{
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-align: right;
+    color: white;
+    font-size: 30px;
+    display: block;
+}
+
+.orange-text{
+
+    color: darkorange;
+
+}
+.wf-orange-text{
+    width: 100%;
+    color: darkorange;
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.wf-orange-text:hover{
+    color: white;
+    background-color: darkorange;
+    text-shadow: 0 0 2px black;
+}
+header{
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Viewport Height 100%*/
+    border: 2px solid black;
+}
+
+header .message{
+    margin-top: 8%;
+    
+    font-size: 120%;
+    text-align: center;
+    text-shadow: -1px 0 0.5px black, 0 1px 0.5px black, 1px 0 0.5px black, 0 -1px 0.5px black;
+}
+
+
+header button{
+   position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    background-color: transparent;
+    outline: none;
+    padding: 50px 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+/*
+    box-shadow: -1px 0 0.5px black, 0 1px 0.5px black, 1px 0 1px black, 0 -1px 0.5px black;
+    text-shadow: -1px 0 0.5px black, 0 1px 0.5px black, 1px 0 0.5px black, 0 -1px 0.5px black;
+    
+    background-color: transparent;
+    color: white;
+    padding: 50px 20px;
+    position: absolute;
+    margin: auto 0;
+    bottom: 10%;
+    outline: none;
+    border: 1px solid white;  
+    border-radius: 10px;
+*/
+
+}
+
+/* --- povratak na vrh */
+
+.bottom-button{
+    text-align: center;
+}
+.button-top{
+    box-shadow: -1px 0 0.5px black, 0 1px 0.5px black, 1px 0 1px black, 0 -1px 0.5px black;
+    text-shadow: -1px 0 0.5px black, 0 1px 0.5px black, 1px 0 0.5px black, 0 -1px 0.5px black;
+    text-align: center;
+    
+    background-color: transparent;
+    color: white;
+    padding: 10px 50px;
+    outline: none;
+    border: 1px solid white;  
+    border-radius: 10px;  
+}
+
+.message button:hover,
+.button-top:hover{
+    background-color: darkorange;
+    text-decoration: none;
+}
+
+.message p{
+    margin: 10px 0;
+}
+
+.description{
+    padding: 15px;
+}
+h1{
+    color:darkorange;
+}
+h2{
+    color: darkorange;
+    font-size: 170%;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+
+
+.section-2{
+    
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+.section-2 p{
+    width: 100%;
+    
+    margin-top: 15px;
+    text-align: center;
+}
+
+.section-2 h2{
+    text-align: left;
+    padding: 0;
+}
+.right-icons{
+    padding-top: 50px;
+}
+
+.section-3, .section-4, .section-5, .section-6, .section-7, .section-8, .section-9{
+    margin: 20px auto;
+    width: 80%;
+   border-bottom: 2px solid black;
+}
+
+.section-3 ul{
+    padding-top: 15px;   
+}
+.section-3 li {
+    list-style: none;
+    margin-top: 5px;
+    font-weight: 100;
+    
+}
+.section-3 li i {
+    padding-right: 10px;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    color: white;
+    
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background: transparent;
+}
+
+input[type=submit] {
+    background-color: darkorange;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 0 0 2px black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#about-image{
+    border: 3px solid black;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 100%;
+    opacity: 0.7;
+    transform: scale(0.95);
+    transition: transform 0.2s;
+}
+
+.avatar-shadow{
+    width: 100%;
+    border-radius: 49%;
+    box-shadow: rgba(0, 0, 0, 0.9) 3px 3px 10px inset;
+    transition: box-shadow 0.2s ease-in;
+}
+.avatar-shadow:hover{
+    box-shadow: rgba(0, 0, 0, 0.9) 5px 5px 60px inset;
+}
+
+.avatar-shadow img{
+    width: 100%;
+    position: relative;
+    z-index: -1;
+    border-radius: 50%;
+    
+}
+
+/* - - - -SPRITE AVATASR -----*/
+
+/* Generated by http://css.spritegen.com CSS Sprite Generator */
+.img-1, .img-2, .img-3, .img-4
+{ display: inline-block; background: url('../images/sprite_avatars.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; 
+
+width: 90%;
+    display: block;
+
+    margin: 30px auto 0 auto;
+    border-radius: 200px;
+}
+ 
+.img-1 { background-position: -0px -0px; width: 300px; height: 300px; }
+.img-2 { background-position: -0px -300px; width: 299px; height: 300px; }
+.img-3 { background-position: -0px -600px; width: 299px; height: 300px; }
+.img-4 { background-position: -0px -900px; width: 299px; height: 300px; }
+
+
+/* -------------------- */
+
+
+
+
+.ad-image{
+    border: 2px solid black;
+    border-radius:20px;
+    width: 100%;
+    opacity: 0.8;
+
+  transition: 0.6s ease;
+    filter: grayscale(100%);
+ 
+}
+.ad-image:hover{
+    opacity: 1;
+    filter: grayscale(0);
+
+}
+
+.image-lg{
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 100%;
+    opacity: 0.7;
+    transform: scale(0.95);
+    transition: transform 0.2s;
+}
+.image:hover{
+    transform: scale(1.15);
+    opacity: 1;
+}
+.image-lg:hover{
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.pillars p{
+    margin: 30px 0;
+    
+    
+}
+
+.small-pillar{
+    border-radius: 30px;
+    width: 100%;
+    border: 1px solid white;
+    padding: 30px 0;
+    
+    
+}
+
+.small-pillar p{
+    
+    
+    margin: 0 auto;
+    width: 90%;
+    
+}
+
+.small-pillar img{
+    width: 90%;
+    display: block;
+
+    margin: 30px auto 0 auto;
+    border-radius: 20px;
+    
+}
+
+
+footer{
+    width: 100%;
+    padding: 50px 10% 0 10%;
+    margin: 0 auto;
+    text-align: right;
+    
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+footer .desno{
+    float: left;
+    text-align: right;
+}
+footer .lijevo{
+    text-align: left;
+}
+
+footer .levo li{
+    float: left;
+    padding-left: 25px;
+    
+}
+
+/* For mobile phones: */
+
+[class*="col-"] {
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 768px){
+    /* For desktop: */
+    
+   
+    #about-image{
+        width: 50%;
+        margin: 5% 25%;
+    }
+      
+    .avatar-shadow{
+        width: 50%;
+        margin: 5% 25%;
+    }
+    .main-nav{
+        width: 100%;
+            display: none;
+        }
+     .main-nav li a{
+        display: block;
+        text-align: center;
+        padding-bottom: 25px;
+         
+        }
+
+ .active{
+        display: block;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    .toggle{
+        display: none;
+    }
+    
+.menu-left ul li{
+    float: left;
+    padding: 10px;
+}
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
