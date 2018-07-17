@@ -65,7 +65,7 @@ a:hover{
 }
 .menu-right ul li{
     float: left;
-    padding-right: 25px; 
+    padding: 10px; 
 
 }
 
@@ -111,7 +111,6 @@ header{
 
 header .message{
     margin-top: 8%;
-    
     font-size: 120%;
     text-align: center;
     text-shadow: -1px 0 0.5px black, 0 1px 0.5px black, 1px 0 0.5px black, 0 -1px 0.5px black;
@@ -120,7 +119,7 @@ header .message{
 
 header button{
    position: absolute;
-  top: 90%;
+    top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
     background-color: transparent;
@@ -410,7 +409,32 @@ footer .levo li{
 @media only screen and (max-width: 768px){
     /* For desktop: */
     
-   
+    html{
+        font-size: 16px;
+    }
+    .section-2,.section-3, .section-4, .section-5, .section-6, .section-7, .section-8, .section-9{
+        margin: 20px auto;
+        width: 100%;
+       border-bottom: 2px solid black;
+    }
+    
+    header{
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+        
+    background-position: 30%;
+    height: 100vh; /* Viewport Height 100%*/
+    border: 2px solid black;
+}
+    .image, .image-lg,.ad-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+       
+    }
+    
+  
     #about-image{
         width: 50%;
         margin: 5% 25%;
@@ -428,13 +452,25 @@ footer .levo li{
         display: block;
         text-align: center;
         padding-bottom: 25px;
-         
+        font-size:  18px;
         }
+    
+    .social{
+        display: none;
+    }
 
  .active{
         display: block;
     }
 
+    
+    
+    .col-3 {
+        width: 50%;
+      
+        padding: 10px;
+    
+    }
 }
 
 
@@ -448,7 +484,8 @@ footer .levo li{
     float: left;
     padding: 10px;
 }
-
+    
+ 
     .col-1 {width: 8.33%;}
     .col-2 {width: 16.66%;}
     .col-3 {width: 25%;}
