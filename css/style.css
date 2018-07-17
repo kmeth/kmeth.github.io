@@ -426,7 +426,20 @@ footer .levo li{
     height: 100vh; /* Viewport Height 100%*/
     border: 2px solid black;
 }
-    .image, .image-lg,.ad-image{
+    
+    header button{
+        top: 80%;
+    }
+    
+    .image, .ad-image{
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+        
+    }
+    .image-lg{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -441,8 +454,11 @@ footer .levo li{
     }
       
     .avatar-shadow{
-        width: 50%;
-        margin: 5% 25%;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+
     }
     .main-nav{
         width: 100%;
@@ -466,10 +482,7 @@ footer .levo li{
     
     
     .col-3 {
-        width: 50%;
-      
-        padding: 10px;
-    
+       
     }
 }
 
