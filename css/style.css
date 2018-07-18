@@ -66,7 +66,8 @@ nav a:hover {
 /* - - - - RESPONSIVE NAVBAR  - - - - - */
 
 .toggle {
-	padding: 10px 20px;
+	padding: 15px 50px;
+    margin: auto;
 	text-align: right;
 	color: white;
 	font-size: 35px;
@@ -296,7 +297,7 @@ input[type=submit] {
 
 footer {
 	width: 100%;
-	padding: 50px 10% 0 10%;
+	padding: 0 10% 0 10%;
 	margin: 0 auto;
 	text-align: right;
 	background-color: rgba(0, 0, 0, 0.7);
@@ -334,8 +335,11 @@ footer .desno {
 	}
 	nav {
 		padding: 0;
-		min-height: 10%;
+		height: 70px;
 	}
+    .menu-left{
+        padding: 0;
+    }
 	header button {
 		top: 85%;
 	}
@@ -378,9 +382,13 @@ footer .desno {
 	.active {
 		display: block;
 	}
-	.menu-right ul li a{
+    .active-nav{
+        padding-bottom: 220px;
+    }
+    .menu-right{
         display: none;
-	}
+    }
+
 }
 
 @media only screen and (min-width: 768px) {

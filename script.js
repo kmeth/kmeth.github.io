@@ -25,7 +25,8 @@ $(document).ready(function(){
     
     /* Mobile nav*/
 $('.menu').click(function(){
-     $('ul').toggleClass('active');  
+     $('.main-nav').toggleClass('active'); 
+    $('nav').toggleClass('active-nav'); 
    });
     
     
