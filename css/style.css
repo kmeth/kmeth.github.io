@@ -428,7 +428,7 @@ footer .levo li{
 }
     
     header button{
-        top: 80%;
+        top: 70%;
     }
     
     .image, .ad-image{
@@ -471,8 +471,11 @@ footer .levo li{
         font-size:  18px;
         }
     
-    .social{
+    .social-nav{
+        width: 100%;
+        
         display: none;
+        
     }
 
  .active{
@@ -481,9 +484,7 @@ footer .levo li{
 
     
     
-    .col-3 {
-       
-    }
+
 }
 
 
