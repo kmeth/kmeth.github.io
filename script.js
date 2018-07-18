@@ -24,7 +24,7 @@ $(document).ready(function(){
   });
     
     /* Mobile nav*/
-$('.menu').click(function(){
+$('nav').click(function(){
      $('ul').toggleClass('active');  
    });
     
