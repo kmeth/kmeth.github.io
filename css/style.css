@@ -10,7 +10,7 @@ html {
 	background-image: url(../images/background_repeat.jpg);
 	font-size: 18px;
 	letter-spacing: 2px;
-	color: whitesmoke;
+	color: #f3eded;
 }
 
 .row::after {
