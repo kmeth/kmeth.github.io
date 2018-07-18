@@ -114,20 +114,6 @@ section {
 	color: darkorange;
 }
 
-.wf-orange-text {
-	color: darkorange;
-	background-color: rgba(0, 0, 0, 0.7);
-	text-align: center;
-	border: 1px solid white;
-	border-radius: 10px;
-	padding: 10px;
-}
-
-.wf-orange-text:hover {
-	color: white;
-	background-color: darkorange;
-	text-shadow: 0 0 2px black;
-}
 
 
 /* GLOBAL */
@@ -197,13 +183,19 @@ li {
     margin-top: 40px;
 	border-radius: 30px;
 	width: 100%;
-	border: 2px solid rgba(255,255,255,0.2);
-	padding: 30px 0;
+	
+	
+  padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+   
 }
 
 .small-pillar p {
 	margin: 0 auto;
 	width: 90%;
+    
 }
 
 .small-pillar img {
@@ -212,8 +204,51 @@ li {
 	margin: 30px auto 0 auto;
 	border-radius: 20px;
 }
+.wf-orange-text {
+	color: darkorange;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 10px;
+
+}
 
 
+.wf-orange-text:hover {
+	color: white;
+	background-color: darkorange;
+	text-shadow: 0 0 2px black;
+}
+
+.collapsible{
+    color: darkorange;
+	background-color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;   
+    
+}
+.active-wf, .collapsible:hover{
+   color: white;
+	background-color: darkorange;
+	text-shadow: 0 0 2px black;
+    
+}
+.collapsible:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+.active-wf:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 /* SECTION- - PORTFOLIO*/
 .image,
 .image-lg{
