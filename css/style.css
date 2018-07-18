@@ -426,9 +426,12 @@ footer .levo li{
     height: 100vh; /* Viewport Height 100%*/
     border: 2px solid black;
 }
-    
+    nav{
+       padding:0;
+        height: 10%;
+    }
     header button{
-        top: 70%;
+        top: 85%;
     }
     
     .image, .ad-image{
