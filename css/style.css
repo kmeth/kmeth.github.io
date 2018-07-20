@@ -99,8 +99,8 @@ header button {
 	outline: none;
 	padding: 50px 20px;
 	color: white;
-	border: 1px solid white;
-	border-radius: 20px;
+	border: none;
+    font-size: 150%;
 }
 
 section {
@@ -308,24 +308,26 @@ input[type=submit] {
 
 .bottom-button {
 	text-align: center;
+    
 }
 
 .button-top {
 	box-shadow: -1px 0 0.5px black, 0 1px 0.5px black, 1px 0 1px black, 0 -1px 0.5px black;
 	text-shadow: -1px 0 0.5px black, 0 1px 0.5px black, 1px 0 0.5px black, 0 -1px 0.5px black;
 	text-align: center;
+    font-size: 150%;
 	background-color: transparent;
 	color: white;
 	padding: 10px 50px;
     margin-top: 200px;
 	outline: none;
-	border: 1px solid white;
-	border-radius: 10px;
+	border: none;
+
 }
 
 .message button:hover,
 .button-top:hover {
-	background-color: darkorange;
+	color: darkorange;
 	text-decoration: none;
     
 }
