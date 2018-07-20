@@ -30,8 +30,8 @@ $('.menu').click(function(){
    });
     
     
-});
-
+    
+    
 /* COLLAPSIBLE*/
 
 var coll = document.getElementsByClassName("collapsible");
@@ -64,8 +64,33 @@ for (i = 0; i < coll.length; i++) {
   $(window).scroll(function() {
     $('.animated').each(function() {
       if (isScrolledIntoView(this) === true) {
-        $(this).addClass('fadeInUp');
+        $(this).addClass('bounceInLeft');
         $(this).css("visibility","visible");
       }
     });
+  
   });
+
+    /*  IMAGE INTERVAL */
+    
+    var images = ["images/avatars/av_1.jpg","images/avatars/av_2.jpg","images/avatars/av_3.jpg","images/avatars/av_4.jpg","images/avatars/av_5.jpg","images/avatars/av_6.jpg"]
+    var curPic = -1;
+    var img0 = new Array();
+    for(i=0;i<images.length;i++){
+        img0[i] = new Image();
+        img0[i].src = images[i];
+        
+    }
+    
+    function swapImage(){
+        curPic = (++curPic > images.length-1)? 0: curPic;
+        imgCont.src = img0[curPic].src;
+        setTimeout(swapImage,2000);
+    }
+    
+    window.onload=function(){
+        imgCont=document.getElementById('avatar-pic');
+        swapImage();
+    }
+    
+});

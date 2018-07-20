@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+    
 }
 
 html {
@@ -275,7 +276,7 @@ li {
 
 .avatar img{
     width: 100%;
-
+    
 }
 
 
